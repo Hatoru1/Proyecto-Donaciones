@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	
+	<title>Contactanos - HUTHELP</title>
+	<!-- este es el icono del logo de la pagina -->
+	<link rel="shortcut icon" href="resources/assets/images/gt_favicon.png">
+	<!-- usar api de google para el estilo de las letras -->
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="resources/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/assets/css/font-awesome.min.css">
+
+	<!-- Importando bootstrap y css para poder utilizarlos -->
+	<link rel="stylesheet" href="resources/assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="resources/assets/css/main.css">
+
+	
+</head>
+
+<body>
+	<!-- Barra de navegacion fija -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Se transforma en boton cuando la pantalla se hace mas pequeña y jala los atributos del navbar-collapse -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<!-- imagen del logo -->
+				<a class="navbar-brand" href="index.html"><img width="158px" height="58px" src="resources/assets/images/LOGO_HUTHELP.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+			<!-- el navbar ocupa todo , y con nav pull-right le digo que empieze a llenar de derecha a izquierda -->
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="index.html">INICIO</a></li>
+					<li><a href="about.html">QUIENES SOMOS</a></li>
+					
+					<li><a href="contact.html">CONTACTENOS</a></li>
+					<li><a class="btn" href="signin.html">DONA AQUI</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+	<!-- Esta parte es para direccionar dentro de la pagina hacia otra ventana -->
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">About</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Contenido principal del artículo -->
+			<article class="col-sm-9 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Contact us</h1>
+				</header>
+				
+				<p>
+					We’d love to hear from you. Interested in working together? Fill out the form below with some info about your project and I will get back to you as soon as I can. Please allow a couple days for me to respond.
+				</p>
+				<br>
+					<form>
+						<div class="row">
+							<div class="col-sm-4">
+								<input class="form-control" type="text" placeholder="Name">
+							</div>
+							<div class="col-sm-4">
+								<input class="form-control" type="text" placeholder="Email">
+							</div>
+							<div class="col-sm-4">
+								<input class="form-control" type="text" placeholder="Phone">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-12">
+								<textarea placeholder="Type your message here..." class="form-control" rows="9"></textarea>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-6">
+								<label class="checkbox"><input type="checkbox"> Sign up for newsletter</label>
+							</div>
+							<div class="col-sm-6 text-right">
+								<input class="btn btn-action" type="submit" value="Enviar mensaje">
+							</div>
+						</div>
+					</form>
+
+			</article>
+			<!-- /Article -->
+			
+			<!-- barra lateral sidebar -->
+			<aside class="col-sm-3 sidebar sidebar-right">
+
+				<div class="widget">
+					<h4>Address</h4>
+					<address>
+						2002 Holcombe Boulevard, Houston, TX 77030, USA
+					</address>
+					<h4>Phone:</h4>
+					<address>
+						(713) 791-1414
+					</address>
+				</div>
+
+			</aside>
+			<!-- /Sidebar -->
+
+		</div>
+	</div>	<!-- /container -->
+	
+	<section class="container-full top-space">
+		<!-- <div id="map"></div> -->
+		<!-- aqui va el api de google para la ubicacion -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.9126213383574!2d-77.0076129845542!3d-11.980547843935673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5639b5e5631%3A0x92e4873e7f233e35!2sCibertec!5e0!3m2!1ses-419!2spe!4v1570312855413!5m2!1ses-419!2spe" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</section>
+<!-- pie de pagina / top space significa espacio en la parte superior -->
+	<footer id="footer">
+<!-- footer1 esta aplicandole un estilo personalizado a ese div como el fondo en negro -->
+		<div class="footer1">
+			<div class="container">
+			<!-- row es fila -->
+				<div class="row">
+					<!-- widget es para darle un tamaño y un color personalizado /pequeño -->
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contáctanos</h3>
+						<div class="widget-body">
+							<p>+234 23 9873237<br>
+								<a href="mailto:#">huthelp@ayudanos.com</a><br>
+								<br>
+								234 Hidden Pond Road, Ashland City, TN 37015
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Siguenos en: </h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Info</h3>
+						<div class="widget-body">
+							<p>Si tiene objetos que ya no utilice y le está ocupando espacio, no dude en llamarnos y pasamos a recoger en su centro de labores o domicilio.</p>
+							<p><strong style="color:gray;">Desde su oficina o empresa:</strong>
+papeles, plásticos, botellas, fierros, cartones, plásticos, chatarra, metales, escritorios, revistas,  equipo de cómputos, maquinarias en desuso, vehículos en desuso, papeles en general, artefactos en general, repuestos en general y todo material de reciclaje.</p>
+<p><strong style="color:gray;">Desde su hogar:</strong>
+muebles, camas, mesas, veladores, ropas, zapatos, libros, revistas, vajillas, papel, periódico, cartón, plásticos, botellas de vidrios, colchones, juguetes, cuadernos, computadores, laptops, artefactos electrodomésticos, etc.</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+<!-- footer2 esta aplicandole un estilo personalizado a ese div como el fondo en negro -->
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="index.html">Inicio</a> 
+								<a href="about.html">¿Quienes Somos?</a> 
+								<a href="contact.html">Contáctanos</a> 
+								<b><a href="signup.html">Registrate</a></b>
+							</p>
+						</div>
+					</div>
+
+					
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+	</footer>	
+		
+
+
+
+
+	<!-- Las bibliotecas de JavaScript se colocan al final del documento para que las páginas se carguen más rápido -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="resources/assets/js/headroom.min.js"></script>
+	<script src="resources/assets/js/jQuery.headroom.min.js"></script>
+	<script src="resources/assets/js/template.js"></script>
+	
+	<!-- Google Maps para poder utilizar el api de google-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script> 
+	<script src="resources/assets/js/google-map.js"></script>
+	
+
+</body>
+</html>

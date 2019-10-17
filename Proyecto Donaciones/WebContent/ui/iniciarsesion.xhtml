@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	>
+
+<ui:composition template="../templates/uiConMenu.xhtml">
+	<ui:define name="content">
+	
+	<!-- <p:column headerText="Bienvenido" style="width:15px">
+	 		<h:outputLabel value="#{filita.codMedicamento}"></h:outputLabel>	 	
+	 	</p:column> -->
+	 <h:form>
+	 <p:fieldset legend="Login">
+	 <p:panelGrid columns="2">
+	 
+	 <h:outputLabel value="Usuario"></h:outputLabel>
+	 <p:inputText value="#{CRUDDonante.donante.usuDonante}">
+	 </p:inputText>
+	 
+	 <h:outputLabel value="Contraseña"></h:outputLabel>
+	 <p:inputText value="#{CRUDDonante.donante.contraDonante}">
+	 </p:inputText>
+	 
+	 
+	 
+	 <p:commandButton value="Ingresar" action="#{CRUDDonante.IngresarDonante}">
+	 </p:commandButton>
+	 
+	 </p:panelGrid>
+	 
+	 </p:fieldset>
+	 
+	 
+	 
+	 </h:form>   
+	    
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	
+	<title>Iniciar Sesion - HUTHELP</title>
+	<!-- este es el icono del logo de la pagina -->
+	<link rel="shortcut icon" href="resources/assets/images/gt_favicon.png">
+	<!-- usar api de google para el estilo de las letras -->
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="resources/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/assets/css/font-awesome.min.css">
+
+	<!-- Importando bootstrap y css para poder utilizarlos -->
+	<link rel="stylesheet" href="resources/assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="resources/assets/css/main.css">
+
+	
+</head>
+
+<body>
+	<!-- Barra de navegacion fija -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Se transforma en boton cuando la pantalla se hace mas pequeña y jala los atributos del navbar-collapse -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<!-- imagen del logo -->
+				<a class="navbar-brand" href="index.html"><img width="158px" height="58px" src="resources/assets/images/LOGO_HUTHELP.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+			<!-- el navbar ocupa todo , y con nav pull-right le digo que empieze a llenar de derecha a izquierda -->
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="index.html">INICIO</a></li>
+					<li><a href="about.html">QUIENES SOMOS</a></li>
+					
+					<li><a href="contact.html">CONTACTENOS</a></li>
+					<li><a class="btn" href="signin.html">DONA AQUI</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+	
+	<!-- el secondary esta personalizado en el css para que no ocupe espacio -->
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+		<!-- Esta parte es para direccionar dentro de la pagina hacia otra ventana -->
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">User access</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Contenido principal del articulo -->
+			<article class="col-xs-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Iniciar Sesión</h1>
+				</header>
+				<!-- configurado para todos los tamaños en tamaño normal quite 3 a cada lado en tamaño pequeño quite 2 -->
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center">Ingresa y Disfruta</h3>
+							<p class="text-center text-muted">Si no tienes una cuenta <a href="signup.html">Registrate</a> y colabora. Que esperas dona, todo VALE. </p>
+							<hr>
+							
+							<form>
+								<div class="top-margin">
+									<label>Usuario <span class="text-danger">*</span></label>
+									<input type="text" class="form-control" formaction="#{CRUDDonante.donante.usuDonante}">
+								</div>
+								<div class="top-margin">
+									<label>Contraseña <span class="text-danger">*</span></label>
+									<input type="password" class="form-control" formaction="#{CRUDDonante.donante.contraDonante}">
+								</div>
+
+								<hr>
+
+								<div class="row">
+									<div class="col-lg-8">
+										<b><a href="">Forgot password?</a></b>
+									</div>
+									<!-- que el texto este en la izquierda(el buton) -->
+									<div class="col-lg-4 text-right">
+										<button class="btn btn-action" type="submit" formaction="#{CRUDDonante.IngresarDonante}">Ingresar</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>	<!-- /container -->
+	
+<!-- pie de pagina / top space significa espacio en la parte superior -->
+	<footer id="footer" class="top-space">
+<!-- footer1 esta aplicandole un estilo personalizado a ese div como el fondo en negro -->
+		<div class="footer1">
+			<div class="container">
+			<!-- row es fila -->
+				<div class="row">
+					<!-- widget es para darle un tamaño y un color personalizado /pequeño -->
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contáctanos</h3>
+						<div class="widget-body">
+							<p>+234 23 9873237<br>
+								<a href="mailto:#">huthelp@ayudanos.com</a><br>
+								<br>
+								234 Hidden Pond Road, Ashland City, TN 37015
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Siguenos en: </h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Info</h3>
+						<div class="widget-body">
+							<p>Si tiene objetos que ya no utilice y le está ocupando espacio, no dude en llamarnos y pasamos a recoger en su centro de labores o domicilio.</p>
+							<p><strong style="color:gray;">Desde su oficina o empresa:</strong>
+papeles, plásticos, botellas, fierros, cartones, plásticos, chatarra, metales, escritorios, revistas,  equipo de cómputos, maquinarias en desuso, vehículos en desuso, papeles en general, artefactos en general, repuestos en general y todo material de reciclaje.</p>
+<p><strong style="color:gray;">Desde su hogar:</strong>
+muebles, camas, mesas, veladores, ropas, zapatos, libros, revistas, vajillas, papel, periódico, cartón, plásticos, botellas de vidrios, colchones, juguetes, cuadernos, computadores, laptops, artefactos electrodomésticos, etc.</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+<!-- footer2 esta aplicandole un estilo personalizado a ese div como el fondo en negro -->
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="index.html">Inicio</a> | 
+								<a href="about.html">¿Quienes Somos?</a> |
+								<a href="contact.html">Contáctanos</a> |
+								<b><a href="signup.html">Registrate</a></b>
+							</p>
+						</div>
+					</div>
+
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+	</footer>	
+		
+
+
+
+
+	<!-- Las bibliotecas de JavaScript se colocan al final del documento para que las páginas se carguen más rápido -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="resources/assets/js/headroom.min.js"></script>
+	<script src="resources/assets/js/jQuery.headroom.min.js"></script>
+	<script src="resources/assets/js/template.js"></script>
+</body>
+</html>
